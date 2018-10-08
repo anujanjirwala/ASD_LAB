@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-unsigned long amount=1000, deposit, withdraw;
+unsigned long amount=1000,account, deposit, withdraw;
 int choice, pin, k;
 char transaction ='y';
 
@@ -19,7 +19,8 @@ void main()
 		printf("1. Check Balance\n");
 		printf("2. Withdraw Cash\n");
 		printf("3. Deposit Cash\n");
-		printf("4. Quit\n");
+		printf("4. Request Bank Statement.\n");
+		printf("5. Quit\n");
 		printf("******************?**************************?*\n\n");
 		printf("Enter your choice: ");
 		scanf("%d", &choice);
@@ -49,10 +50,14 @@ void main()
 		case 3:
 			printf("\n ENTER THE AMOUNT TO DEPOSIT");
 			scanf("%lu", &deposit);
-                        amount = amount + deposit;
-			printf("YOUR BALANCE IS %lu", amount);
+			printf("YOUR BALANCE sheet is on the way to your  %lu", amount);
 			break;
 		case 4:
+			printf("\n ENTER THE Account number");
+			scanf("%lu", &account);
+                  	printf("YOUR BALANCE IS on the way at your registered email ID for account number :", account);
+			break;
+		case 5:
 			printf("\n THANK U USING ATM");
 			break;
 		default:
