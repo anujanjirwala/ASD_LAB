@@ -1,6 +1,6 @@
 # ASD_LAB
 
-Tis is a file for instruction ofhow to use project.
-it alo include th documentation of the project.
+This is a file for instruction of how to use project.
+it also include the documentation of the project.
 
 Anuj Anjirwala
